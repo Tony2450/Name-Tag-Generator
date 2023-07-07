@@ -8,13 +8,14 @@ class UserInput extends Component {
     }
     handleSubmit = event => {
         event.preventDefault();
-        this.setState({name:""})
+        this.props.addName(this.state.name);
+        this.setState({name:""});
     }
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
                 <input type="text" placeholder="Add a new name here..." value={this.state.name} onChange={this.updateName}/>
-                <input type="submit" value="Create Name Tag"/>
+                <input type="submit" value="Create Name Tag" />
             </form>
         )
     };

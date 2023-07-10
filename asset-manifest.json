@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Name-Tag-Generator/static/css/main.0fb00a8c.css",
+    "main.css": "/Name-Tag-Generator/static/css/main.0db3bc89.css",
     "main.js": "/Name-Tag-Generator/static/js/main.9eadbdbe.js",
     "index.html": "/Name-Tag-Generator/index.html",
-    "main.0fb00a8c.css.map": "/Name-Tag-Generator/static/css/main.0fb00a8c.css.map",
+    "main.0db3bc89.css.map": "/Name-Tag-Generator/static/css/main.0db3bc89.css.map",
     "main.9eadbdbe.js.map": "/Name-Tag-Generator/static/js/main.9eadbdbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fb00a8c.css",
+    "static/css/main.0db3bc89.css",
     "static/js/main.9eadbdbe.js"
   ]
 }

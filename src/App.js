@@ -17,6 +17,17 @@ class App extends Component {
     const newNames = this.state.names.concat(inputArray);
     this.setState({ names:newNames });
   };
+  componentDidMount(){
+    const savedState = localStorage.getItem("stateString")
+    if (savedState){
+      const savedArray = JSON.parse(savedState);
+      this.setState({names:savedArray})
+    }
+  };
+  componentDidUpdate(){
+    const stateString = JSON.stringify(this.state.names);
+    localStorage.setItem("stateString",stateString);
+  };
   render() {
     return (
       <div className="App">

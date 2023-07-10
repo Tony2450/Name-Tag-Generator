@@ -8,7 +8,7 @@ class UserInput extends Component {
         event.preventDefault();
         this.props.addName(this.state.name);
         this.setState({name:""});
-    }
+    };
     render(){
         return(
             <form onSubmit={this.handleSubmit}>

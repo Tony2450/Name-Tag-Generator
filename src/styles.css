@@ -35,9 +35,9 @@ input[type='text'] {
 .name {
   background-color: white;
   margin: 10px 0px;
-  padding: 0px 10px;
+  padding: 10px;
   font-size: 60px;
-  height: 90px;
+  height: auto;
   font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
 }
 .name-tag__delete {

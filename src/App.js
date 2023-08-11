@@ -22,6 +22,8 @@ class App extends Component {
     if (savedState){
       const savedArray = JSON.parse(savedState);
       this.setState({names:savedArray})
+    } else {
+      return
     }
   };
   componentDidUpdate(){

@@ -18,7 +18,8 @@ class App extends Component {
     this.setState({ names:newNames });
   };
   componentDidMount(){
-    const savedState = localStorage.getItem("Names")
+    localStorage.clear();
+    const savedState = localStorage.getItem("Names");
     if (savedState){
       const savedArray = JSON.parse(savedState);
       this.setState({names:savedArray})

@@ -18,7 +18,7 @@ class App extends Component {
     this.setState({ names:newNames });
   };
   componentDidMount(){
-    const savedState = localStorage.getItem("stateStringNames")
+    const savedState = localStorage.getItem("Names")
     if (savedState){
       const savedArray = JSON.parse(savedState);
       this.setState({names:savedArray})
@@ -26,7 +26,7 @@ class App extends Component {
   };
   componentDidUpdate(){
     const stateStringNames = JSON.stringify(this.state.names);
-    localStorage.setItem("stateStringNames",stateStringNames);
+    localStorage.setItem("Names",stateStringNames);
   };
   render() {
     return (

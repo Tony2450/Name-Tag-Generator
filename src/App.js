@@ -18,15 +18,15 @@ class App extends Component {
     this.setState({ names:newNames });
   };
   componentDidMount(){
-    const savedState = localStorage.getItem("stateString")
+    const savedState = localStorage.getItem("stateStringNames")
     if (savedState){
       const savedArray = JSON.parse(savedState);
       this.setState({names:savedArray})
     }
   };
   componentDidUpdate(){
-    const stateString = JSON.stringify(this.state.names);
-    localStorage.setItem("stateString",stateString);
+    const stateStringNames = JSON.stringify(this.state.names);
+    localStorage.setItem("stateStringNames",stateStringNames);
   };
   render() {
     return (
